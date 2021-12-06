@@ -3,7 +3,7 @@ type ScannerProps = {
 }
 
 const Scanner = ({ onChange }: ScannerProps) => {
-  return <input type="text" onChange={(e) => onChange(e.target.value)} />
+  return <input type="text" onBlur={(e) => onChange(e.target.value)} />
 }
 
 export default Scanner
