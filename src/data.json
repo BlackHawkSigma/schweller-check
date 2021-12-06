@@ -1,0 +1,380 @@
+[
+    {
+        "input": "40199933",
+        "variant": "5",
+        "side": "left",
+        "color": "MOONDUST SILVER",
+        "output": "50151356"
+    },
+    {
+        "input": "40199995",
+        "variant": "5",
+        "side": "left",
+        "color": "FROZEN WHITE",
+        "output": "50151357"
+    },
+    {
+        "input": "40199997",
+        "variant": "5",
+        "side": "left",
+        "color": "RACE RED",
+        "output": "50151359"
+    },
+    {
+        "input": "40199998",
+        "variant": "5",
+        "side": "left",
+        "color": "MAGNETIC",
+        "output": "50151360"
+    },
+    {
+        "input": "40200001",
+        "variant": "5",
+        "side": "left",
+        "color": "BLUE METALLIC",
+        "output": "50151363"
+    },
+    {
+        "input": "40200006",
+        "variant": "5",
+        "side": "left",
+        "color": "AGATE BLACK",
+        "output": "50151370"
+    },
+    {
+        "input": "40203541",
+        "variant": "5",
+        "side": "left",
+        "color": "BERRY RED",
+        "output": "50152971"
+    },
+    {
+        "input": "40203542",
+        "variant": "5",
+        "side": "left",
+        "color": "BOUNDLESS BLUE",
+        "output": "50152972"
+    },
+    {
+        "input": "40206717",
+        "variant": "5",
+        "side": "left",
+        "color": "MEAN GREEN",
+        "output": "50155043"
+    },
+    {
+        "input": "40200004",
+        "variant": "5",
+        "side": "left",
+        "color": "METROPOLIS WHITE",
+        "output": "50151369"
+    },
+    {
+        "input": "40199999",
+        "variant": "5",
+        "side": "left",
+        "color": "RUBY RED",
+        "output": "50151361"
+    },
+    {
+        "input": "40200002",
+        "variant": "5",
+        "side": "left",
+        "color": "PERFORMANCE BLUE",
+        "output": "50151364"
+    },
+    {
+        "input": "40202945",
+        "variant": "5",
+        "side": "left",
+        "color": "FREEDOM BLUE",
+        "output": "50152731"
+    },
+    {
+        "input": "40199934",
+        "variant": "5",
+        "side": "right",
+        "color": "MOONDUST SILVER",
+        "output": "50151372"
+    },
+    {
+        "input": "40200008",
+        "variant": "5",
+        "side": "right",
+        "color": "FROZEN WHITE",
+        "output": "50151374"
+    },
+    {
+        "input": "40200010",
+        "variant": "5",
+        "side": "right",
+        "color": "RACE RED",
+        "output": "50151376"
+    },
+    {
+        "input": "40200011",
+        "variant": "5",
+        "side": "right",
+        "color": "MAGNETIC",
+        "output": "50151379"
+    },
+    {
+        "input": "40200015",
+        "variant": "5",
+        "side": "right",
+        "color": "BLUE METALLIC",
+        "output": "50151382"
+    },
+    {
+        "input": "40200020",
+        "variant": "5",
+        "side": "right",
+        "color": "AGATE BLACK",
+        "output": "50151388"
+    },
+    {
+        "input": "40203543",
+        "variant": "5",
+        "side": "right",
+        "color": "BERRY RED",
+        "output": "50152993"
+    },
+    {
+        "input": "40203544",
+        "variant": "5",
+        "side": "right",
+        "color": "BOUNDLESS BLUE",
+        "output": "50152994"
+    },
+    {
+        "input": "40206718",
+        "variant": "5",
+        "side": "right",
+        "color": "MEAN GREEN",
+        "output": "50155044"
+    },
+    {
+        "input": "40200019",
+        "variant": "5",
+        "side": "right",
+        "color": "METROPOLIS WHITE",
+        "output": "50151387"
+    },
+    {
+        "input": "40200013",
+        "variant": "5",
+        "side": "right",
+        "color": "RUBY RED",
+        "output": "50151380"
+    },
+    {
+        "input": "40200016",
+        "variant": "5",
+        "side": "right",
+        "color": "PERFORMANCE BLUE",
+        "output": "50151383"
+    },
+    {
+        "input": "40202946",
+        "variant": "5",
+        "side": "right",
+        "color": "FREEDOM BLUE",
+        "output": "50152732"
+    },
+    {
+        "input": "40199821",
+        "variant": "3",
+        "side": "left",
+        "color": "MOONDUST SILVER",
+        "output": "50151256"
+    },
+    {
+        "input": "40199822",
+        "variant": "3",
+        "side": "left",
+        "color": "FROZEN WHITE",
+        "output": "50151257"
+    },
+    {
+        "input": "40199843",
+        "variant": "3",
+        "side": "left",
+        "color": "RACE RED",
+        "output": "50151332"
+    },
+    {
+        "input": "40199844",
+        "variant": "3",
+        "side": "left",
+        "color": "MAGNETIC",
+        "output": "50151333"
+    },
+    {
+        "input": "40199848",
+        "variant": "3",
+        "side": "left",
+        "color": "BLUE METALLIC",
+        "output": "50151336"
+    },
+    {
+        "input": "40199853",
+        "variant": "3",
+        "side": "left",
+        "color": "AGATE BLACK",
+        "output": "50151340"
+    },
+    {
+        "input": "40203479",
+        "variant": "3",
+        "side": "left",
+        "color": "BERRY RED",
+        "output": "50152966"
+    },
+    {
+        "input": "40203480",
+        "variant": "3",
+        "side": "left",
+        "color": "BOUNDLESS BLUE",
+        "output": "50152967"
+    },
+    {
+        "input": "40206715",
+        "variant": "3",
+        "side": "left",
+        "color": "MEAN GREEN",
+        "output": "50155041"
+    },
+    {
+        "input": "40199851",
+        "variant": "3",
+        "side": "left",
+        "color": "METROPOLIS WHITE",
+        "output": "50151339"
+    },
+    {
+        "input": "40199845",
+        "variant": "3",
+        "side": "left",
+        "color": "RUBY RED",
+        "output": "50151334"
+    },
+    {
+        "input": "40199849",
+        "variant": "3",
+        "side": "left",
+        "color": "PERFORMANCE BLUE",
+        "output": "50151337"
+    },
+    {
+        "input": "40202942",
+        "variant": "3",
+        "side": "left",
+        "color": "FREEDOM BLUE",
+        "output": "50152729"
+    },
+    {
+        "input": "40208774",
+        "variant": "3",
+        "side": "left",
+        "color": "VASTTRAFFIC",
+        "output": "50155696"
+    },
+    {
+        "input": "40199932",
+        "variant": "3",
+        "side": "right",
+        "color": "MOONDUST SILVER",
+        "output": "50151342"
+    },
+    {
+        "input": "40199935",
+        "variant": "3",
+        "side": "right",
+        "color": "FROZEN WHITE",
+        "output": "50151343"
+    },
+    {
+        "input": "40199937",
+        "variant": "3",
+        "side": "right",
+        "color": "RACE RED",
+        "output": "50151346"
+    },
+    {
+        "input": "40199938",
+        "variant": "3",
+        "side": "right",
+        "color": "MAGNETIC",
+        "output": "50151347"
+    },
+    {
+        "input": "40199989",
+        "variant": "3",
+        "side": "right",
+        "color": "BLUE METALLIC",
+        "output": "50151350"
+    },
+    {
+        "input": "40199993",
+        "variant": "3",
+        "side": "right",
+        "color": "AGATE BLACK",
+        "output": "50151354"
+    },
+    {
+        "input": "40203539",
+        "variant": "3",
+        "side": "right",
+        "color": "BERRY RED",
+        "output": "50152968"
+    },
+    {
+        "input": "40203540",
+        "variant": "3",
+        "side": "right",
+        "color": "BOUNDLESS BLUE",
+        "output": "50152970"
+    },
+    {
+        "input": "40206716",
+        "variant": "3",
+        "side": "right",
+        "color": "MEAN GREEN",
+        "output": "50155042"
+    },
+    {
+        "input": "40199992",
+        "variant": "3",
+        "side": "right",
+        "color": "METROPOLIS WHITE",
+        "output": "50151353"
+    },
+    {
+        "input": "40199939",
+        "variant": "3",
+        "side": "right",
+        "color": "RUBY RED",
+        "output": "50151348"
+    },
+    {
+        "input": "40199990",
+        "variant": "3",
+        "side": "right",
+        "color": "PERFORMANCE BLUE",
+        "output": "50151351"
+    },
+    {
+        "input": "40202943",
+        "variant": "3",
+        "side": "right",
+        "color": "FREEDOM BLUE",
+        "output": "50152730"
+    },
+    {
+        "input": "40208777",
+        "variant": "3",
+        "side": "right",
+        "color": "VASTTRAFFIC",
+        "output": "50155697"
+    }
+]
