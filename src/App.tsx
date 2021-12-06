@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+
+import Scanner from './components/Scanner'
+import Side from './components/Side'
+
+import data from './data.json'
+
+import type { Item } from './types'
 
 function App() {
+  const [leftItem, setLeftItem] = useState<Item | undefined>(undefined)
+  const [rightItem, setRightItem] = useState<Item | undefined>(undefined)
+
+  const handleInput = (code: string) => {
+    const part = data.find((d) => d.input === code)
+
+    if (part?.side === 'left') setLeftItem(part)
+    if (part?.side === 'right') setRightItem(part)
+  }
+
+  const handleReset = () => {
+    setLeftItem(undefined)
+    setRightItem(undefined)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'grid' }}>
+      <div>
+        <Scanner onChange={handleInput}></Scanner>
+      </div>
+
+      <div>
+        <Side mySide="left" myItem={leftItem} otherItem={rightItem}></Side>
+        <Side mySide="right" myItem={rightItem} otherItem={leftItem}></Side>
+      </div>
+
+      <div>
+        <button onClick={handleReset}>Reset</button>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
