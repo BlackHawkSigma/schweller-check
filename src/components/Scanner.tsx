@@ -1,9 +1,35 @@
+import { ChangeEvent, useRef, useState } from 'react'
+
 type ScannerProps = {
   onChange: (text: string) => void
 }
 
 const Scanner = ({ onChange }: ScannerProps) => {
-  return <input type="text" onBlur={(e) => onChange(e.target.value)} />
+  const [value, setValue] = useState<string>('')
+  const input = useRef<HTMLInputElement>(null)
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value)
+  }
+
+  const handleBlur = (e: ChangeEvent<HTMLInputElement>) => {
+    onChange(e.target.value)
+    setValue('')
+    input.current?.focus()
+  }
+
+  return (
+    <input
+      className="h-12 p-2 text-lg text-center focus:border-gray-500 outline-none rounded shadow"
+      placeholder="Barcode scannen"
+      type="text"
+      autoFocus
+      ref={input}
+      value={value}
+      onChange={handleChange}
+      onBlur={handleBlur}
+    />
+  )
 }
 
 export default Scanner

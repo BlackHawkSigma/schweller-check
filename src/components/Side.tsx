@@ -13,19 +13,30 @@ const Side = ({ mySide, myItem, otherItem }: SideProps) => {
   const variantOK = myItem && myItem?.variant === otherItem?.variant
 
   return (
-    <div>
-      <h2>{mySide === 'left' ? 'Links' : 'Rechts'}</h2>
+    <div className="h-full bg-white rounded-lg p-2 w-2/5 text-center shadow-xl flex flex-col justify-between items-center">
+      <h2 className="text-4xl font-light">
+        {mySide === 'left' ? 'Links' : 'Rechts'}
+      </h2>
 
-      {myItem && (
-        <p style={{ color: `${colorOK ? 'green' : 'red'}` }}>{myItem.color}</p>
-      )}
-      {myItem && (
-        <p style={{ color: `${variantOK ? 'green' : 'red'}` }}>
-          {myItem.variant} - Türer
-        </p>
-      )}
+      <div className="text-5xl font-bold">
+        {myItem && (
+          <p className={`${colorOK ? 'text-lime-500' : 'text-red-600'}`}>
+            {myItem.color}
+          </p>
+        )}
+      </div>
 
-      {colorOK && variantOK && <Barcode payload={myItem.output} />}
+      <div className="text-5xl font-bold">
+        {myItem && (
+          <p className={`${variantOK ? 'text-lime-500' : 'text-red-600'}`}>
+            {myItem.variant} - Türer
+          </p>
+        )}
+      </div>
+
+      <div className="h-40">
+        {colorOK && variantOK && <Barcode payload={myItem.output} />}
+      </div>
     </div>
   )
 }
