@@ -1,4 +1,4 @@
-import { ChangeEvent, useRef, useState } from 'react'
+import { ChangeEvent, KeyboardEventHandler, useRef, useState } from 'react'
 
 type ScannerProps = {
   onChange: (text: string) => void
@@ -10,6 +10,14 @@ const Scanner = ({ onChange }: ScannerProps) => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value)
+  }
+
+  const handleKeyPress: KeyboardEventHandler<HTMLInputElement> = (e) => {
+    if (e.key === 'Enter') {
+      onChange(value)
+      setValue('')
+      input.current?.focus()
+    }
   }
 
   const handleBlur = (e: ChangeEvent<HTMLInputElement>) => {
@@ -27,6 +35,7 @@ const Scanner = ({ onChange }: ScannerProps) => {
       ref={input}
       value={value}
       onChange={handleChange}
+      onKeyPress={handleKeyPress}
       onBlur={handleBlur}
     />
   )
