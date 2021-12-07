@@ -4,8 +4,8 @@ import type { Item } from '../types'
 
 type SideProps = {
   mySide: 'left' | 'right'
-  myItem?: Item
-  otherItem?: Item
+  myItem: Item | null
+  otherItem: Item | null
 }
 
 const Side = ({ mySide, myItem, otherItem }: SideProps) => {

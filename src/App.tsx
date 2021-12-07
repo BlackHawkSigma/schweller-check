@@ -11,8 +11,8 @@ import data from './data.json'
 import type { Item } from './types'
 
 function App() {
-  const [leftItem, setLeftItem] = useState<Item | undefined>(undefined)
-  const [rightItem, setRightItem] = useState<Item | undefined>(undefined)
+  const [leftItem, setLeftItem] = useState<Item | null>(null)
+  const [rightItem, setRightItem] = useState<Item | null>(null)
 
   const handleInput = (code: string) => {
     const part = data.find((d) => d.input === code)
@@ -22,8 +22,8 @@ function App() {
   }
 
   const handleReset = () => {
-    setLeftItem(undefined)
-    setRightItem(undefined)
+    setLeftItem(null)
+    setRightItem(null)
   }
 
   // clear items after timeout
