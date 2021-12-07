@@ -10,6 +10,12 @@ const Scanner = ({ onChange }: ScannerProps) => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value)
+
+    if (e.target.value.length === 8) {
+      onChange(e.target.value)
+      setValue('')
+      input.current?.focus()
+    }
   }
 
   const handleKeyPress: KeyboardEventHandler<HTMLInputElement> = (e) => {
