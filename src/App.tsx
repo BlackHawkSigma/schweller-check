@@ -4,6 +4,7 @@ import Scanner from './components/Scanner'
 import Side from './components/Side'
 import ResetButton from './components/ResetButton'
 import useTimeout from './hooks/useTimeout'
+import useIsMatch from './hooks/useIsMatch'
 
 import data from './data.json'
 
@@ -33,9 +34,15 @@ function App() {
     leftItem && rightItem ? 30_000 : null
   )
 
+  const isMatch = useIsMatch(leftItem, rightItem)
+
   return (
     <div className="p-6 bg-gray-50 h-screen w-screen">
-      <div className="bg-gray-200 p-2 h-full rounded-2xl text-center">
+      <div
+        className={`${
+          isMatch ? 'bg-lime-500' : 'bg-gray-200'
+        } p-2 h-full rounded-2xl text-center`}
+      >
         <div className="h-1/6 flex">
           <Scanner onChange={handleInput}></Scanner>
         </div>
