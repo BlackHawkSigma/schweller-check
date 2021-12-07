@@ -15,6 +15,10 @@ function App() {
   const [rightItem, setRightItem] = useState<Item | null>(null)
 
   const handleInput = (code: string) => {
+    if (leftItem && rightItem) {
+      handleReset()
+    }
+
     const part = data.find((d) => d.input === code)
 
     if (part?.side === 'left') setLeftItem(part)
