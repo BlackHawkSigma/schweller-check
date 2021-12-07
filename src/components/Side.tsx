@@ -20,7 +20,7 @@ const Side = ({ mySide, myItem, otherItem }: SideProps) => {
 
       <div className="text-5xl font-bold">
         {myItem && (
-          <p className={`${colorOK ? 'text-lime-500' : 'text-red-600'}`}>
+          <p className={`${colorOK ? 'text-lime-700' : 'text-red-600'}`}>
             {myItem.color}
           </p>
         )}
@@ -28,7 +28,7 @@ const Side = ({ mySide, myItem, otherItem }: SideProps) => {
 
       <div className="text-5xl font-bold">
         {myItem && (
-          <p className={`${variantOK ? 'text-lime-500' : 'text-red-600'}`}>
+          <p className={`${variantOK ? 'text-lime-700' : 'text-red-600'}`}>
             {myItem.variant} - Türer
           </p>
         )}
