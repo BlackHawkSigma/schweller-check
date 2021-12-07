@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Scanner from './components/Scanner'
 import Side from './components/Side'
 import ResetButton from './components/ResetButton'
+import useTimeout from './hooks/useTimeout'
 
 import data from './data.json'
 
@@ -23,6 +24,14 @@ function App() {
     setLeftItem(undefined)
     setRightItem(undefined)
   }
+
+  // clear items after timeout
+  useTimeout(
+    () => {
+      handleReset()
+    },
+    leftItem && rightItem ? 30_000 : null
+  )
 
   return (
     <div className="p-6 bg-gray-50 h-screen w-screen">
