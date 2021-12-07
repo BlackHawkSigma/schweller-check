@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="p-6 bg-gray-50 h-screen w-screen">
       <div className="bg-gray-200 p-2 h-full rounded-2xl text-center">
-        <div className="h-1/6">
+        <div className="h-1/6 flex">
           <Scanner onChange={handleInput}></Scanner>
         </div>
 
@@ -36,7 +36,7 @@ function App() {
           <Side mySide="right" myItem={rightItem} otherItem={leftItem}></Side>
         </div>
 
-        <div className="h-1/6">
+        <div className="h-1/6 flex">
           <ResetButton onClick={handleReset} />
         </div>
       </div>

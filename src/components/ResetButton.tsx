@@ -4,7 +4,7 @@ type ResetButtonProps = {
 
 const ResetButton = ({ onClick }: ResetButtonProps) => (
   <button
-    className="text-2xl bg-red-500 px-6 py-4 shadow-xl rounded"
+    className="m-auto text-2xl bg-red-500 px-6 py-4 shadow-xl rounded"
     onClick={onClick}
   >
     Reset

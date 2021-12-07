@@ -20,7 +20,7 @@ const Scanner = ({ onChange }: ScannerProps) => {
 
   return (
     <input
-      className="h-12 p-2 text-lg text-center focus:border-gray-500 outline-none rounded shadow"
+      className="h-12 p-2 m-auto text-lg text-center focus:border-gray-500 outline-none rounded shadow"
       placeholder="Barcode scannen"
       type="text"
       autoFocus
